@@ -49,7 +49,7 @@ function register(){
     clearInputs();
     displayNumberOfPets();
     }
-    
+
 function clearInputs(){
     inputName.value="";
     inputAge.value="";
@@ -66,6 +66,7 @@ function init(){
     let Pain = new Pet("Pain",59,"Male","Dane","Grooming","Shaggy","333-333-3333");
     petSalon.pets.push(Jiraiya,Pain);
     displayNumberOfPets();
+    displayPetTable();
 }
 
 window.onload = init;

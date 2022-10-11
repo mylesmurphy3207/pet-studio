@@ -5,7 +5,8 @@ function displayPetCards(){
         for(let i=0;i<petSalon.pets.length;i++){
             let aPet = petsSalon.pets[i];
              tmp+=`
-            <div>
+            <div class="pet">
+            
                 <p>Name: ${aPet.name} </p>
                 <p>Age: ${aPet.age} </p>
                 <p>Gender: ${aPet.gender} </p>
