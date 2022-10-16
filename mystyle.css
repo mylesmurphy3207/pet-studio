@@ -1,11 +1,55 @@
-#pets{
-    display: grid;
-    grid-template-columns: repreat(3,1fr);
-    column-gap: 10px;
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(47, 80, 142);
+    font-size: 50px;
+    text-align: center;
     
 }
+
+
+footer{
+    margin-top: auto;
+    background-color: rgb(47, 80, 142);
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#pets{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
 .pet{
-    background-color: rgb(146, 135, 135);
-    border: 1px solid rgb(146, 135, 135);
-    padding:10px
+    background-color: rgb(247, 242, 242);
+    border: 3px solid rgb(39, 48, 105);
+    padding: 13px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+table{
+    font-size: 20px;
+    background-color: rgb(133, 131, 128);
+
+     
+}
+label{
+    font: size 20px;
+    font-weight: bold
+    ;
+}
+p{
+    text-align: center;
+    font-size: 25px;
+}
+
+li{
+    font-size: 20px;
 }

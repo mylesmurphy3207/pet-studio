@@ -1,83 +1,116 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Pet Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://kit.fontawesome.com/9cebf66c95.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 <body>
     <header class="container">
-        <h1 class="display-1">Pet fashion</h1>
+    <h1>Pet Fashion</h1>
 
         <ul class="nav justify-content-end">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="Services.html">Services</a>
             </li>
-            <li class="nav-item">
-           
         </ul>
     </header>
-      <main class="container">
-        <h2>Register your pet </h2>
-        <p id="numberOfPets" class="alert alert-dark">Display the number of number Of Pets</p>
-        <div>
-            <div class="mb-3">
-                <label class="form-label">Name:</label>
-                <input class="form=control" type="text" placeholder="Enter pets name" id="txtName">
-            </div>
-            <div class="mb-3">
-                <label>Age</label>
-                <input class="form-control" type="number" id="txtAge">
-            </div>
-            <div class="mb-3">
-                <label>Gender:</label>
-                <input class="form-control" type="text" id="txtGender">
-            </div>
-            <div class="mb-3">
-                <label>Breed:</label>
-                <input class="form-control" type="text" id="txtBreed">
-            </div>
 
-            <div class="mb-3">
-                <label>Service</label>
-                <select class="form-select" id="selService">
-                    <option value="" disabled selected>--- Select an option</option>
-                    <option value="grooming">Grooming</option>
-                    <option value="vaccine">Vaccine</option>
-                    <option value="nails">Nails</option>
-                </select>
-            </div>
-            
-      
-            
-            <button class="btn btn-dark" onclick="register();">Register</buttoin>
-        </div>
-        <div id="pets">
-        <!--pet cards-->
-    </div>
-    <table>
-        <thead>
-            <!--add the headers-->-->
-        </thead>
-            <tbody id="petsTable">
-                <!--add the pets-->
-            </tbody>
+    <main class="container">
+        <div class="container">
+                <h2 class="container">Registration List</h2>
+                <br>
+                <p id="numberOfPets" class="alert alert-dark"> Display the Number of Pets</p>
+                <div>
+                    <div>
+                        <label class="form-label">Name:</label>
+                        <input class="form-control"  type="text" placeholder="Enter Pet's Name" id="txtName">
+                    </div>
+                </div>
+                <div>
+                    <label> Age:</label>
+                    <input class="form-control"  type="number" id="txtAge">    
+                </div>
+                <div>
+                    <label>Gender:</label>
+                    <input class="form-control"  type="text" id="txtGender">
+                </div>
+                <div>
+                    <label>Breed:</label>
+                    <input class="form-control"  type="text" id="txtBreed">
+                </div>
+                <div>
+                    <label>Color:</label>
+                    <input class="form-control" type="text" id="txtColor">
+                </div>
+                <div>
+                    <label>Service:</label>
+                    <select class="form-select" id="txtService">
+                        <option value="" disabled selected> ---Select an option---</option>
+                        <option value="Grooming"> Grooming 🚿</option>
+                        <option value="Vaccine">Vaccine💉</option>
+                        <option value="Nails"> Nails 💅</option>
+                    </select>
+                </div>
+                <div>
+                    <label> Owner's Name:</label>
+                    <input class="form-control" type="text" id="txtOwner">
+                </div>
+                <div>
+                    <label> Mobile: </label>
+                    <input class="form-control" type="number" id="txtMobile">
+                </div>
+                <div>
+                    <label> Payment Method: </label>
+                    <select class="form-select" id="txtPayment">
+                        <option value="" disabled selected> --- select an option---</option>
+                        <option value="Debit / Credit Card"><i class="fa-brands fa-cc-visa" class="fa-brands fa-cc-mastercard"></i>Visa / MasterCard</option>
+                        <option value="PayPal">PayPal</option>
+                        <option value="afterpay">afterpay</option>
+                    </select>
+                </div>
+                <br>
+                <button onclick="register()" class="btn btn-primary"> Register</button>
+                
+         </div>
+         <br>
+                <div id="pets">                   
+                </div>
+                <br>
+                <br>
+                <br>       
+                <table class="table table-striped">
+                    <thead>
+                       <tr>
+                         <th scope="col"> Name </th>
+                         <th scope="col"> Age</th>
+                         <th scope="col"> Gender</th>
+                         <th scope="col"> Breed </th>
+                         <th scope="col"> Color</th>
+                         <th scope="col"> Service </th>
+                         <th scope="col"> Owner </th>
+                         <th scope="col"> Contact </th>
+                       </tr>
+                    </thead>
+                    <tbody id="tablePets" >
+
+                    </tbody>
+                </table>
+    </main>
+    <footer>©2022 Pet fashion, Powered by shopify.</footer>
+            <script src="display.js"></script>
+            <script src="register.js"></script>
+           
         
-    </table>
-        
-        <!-- add input fields-->
-        <!-- pet cards/tables-->
-      </main>
-      <script src="display.js"></script>
-      <script src="register.js"></script>
-    
-</body>
-</html>
+    </body>
+    </html>
+
